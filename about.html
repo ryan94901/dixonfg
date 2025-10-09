@@ -5,10 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About - Dixon Financial Group</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .about-section img {
+      max-width: 250px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-text {
+      flex: 1;
+      min-width: 250px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="navbar">
+      <div class="logo-section">
+        <img src="Logo.png" alt="Dixon Financial Group Logo" class="logo" />
+        <span class="site-title">Dixon Financial Group</span>
+      </div>
       <ul class="nav-list">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html" class="active">About</a></li>
@@ -20,15 +45,25 @@
 
   <main class="container">
     <h1>About Ryan Dixon</h1>
-    <p>
-      Ryan A. Dixon, M.B.A., is a financial executive with 20 years of experience leading finance and operations across high-growth startups and public companies in technology, gaming, retail, and renewable energy sectors.
-    </p>
-    <p>
-      Ryan has a proven track record in FP&A, M&A, forecasting, compliance, and strategic planning. He is skilled at building high-performing teams, streamlining operations, and driving revenue growth through analytical rigor and strategic leadership.
-    </p>
-    <p>
-      Throughout his career, Ryan has held executive roles including CFO at DIV Holdings, VP of Finance at Apparent Inc., and Director of FP&A at Wargaming America. He holds an M.B.A. in Strategic Leadership and a B.A. in Economics.
-    </p>
+
+    <div class="about-section">
+      <img src="Profile_Pict.png" alt="Photo of Ryan Dixon" />
+
+      <div class="about-text">
+        <p>
+          Ryan A. Dixon, M.B.A., is a financial executive with 20 years of experience leading finance and operations across high-growth startups and public companies in technology, gaming, retail, and renewable energy sectors.
+        </p>
+        <p>
+          Ryan has a proven track record in FP&A, M&A, forecasting, compliance, and strategic planning. He is skilled at building high-performing teams, streamlining operations, and driving revenue growth through analytical rigor and strategic leadership.
+        </p>
+        <p>
+          Throughout his career, Ryan has held executive roles including CFO at DIV Holdings, VP of Finance at Apparent Inc., and Director of FP&A at Wargaming America. He holds an M.B.A. in Strategic Leadership and a B.A. in Economics.
+        </p>
+        <p>
+          When he’s not managing complex financial operations, Ryan enjoys hiking, woodworking, mentoring students, and paddle boarding.
+        </p>
+      </div>
+    </div>
   </main>
 
   <footer>
@@ -36,4 +71,3 @@
   </footer>
 </body>
 </html>
-
