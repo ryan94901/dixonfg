@@ -5,14 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dixon Financial Group - Home</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .home-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .home-section img {
+      max-width: 250px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .home-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .home-text p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <nav class="navbar">
-      <div class="logo-section">
-        <img src="Logo.png" alt="Dixon Financial Group Logo" class="logo" />
-        <span class="site-title">Dixon Financial Group</span>
-      </div>
+    <nav>
       <ul class="nav-list">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -23,16 +45,19 @@
   </header>
 
   <main class="container">
-    <h1>Welcome to Dixon Financial Group</h1>
-    <h2 class="tagline">Fractional CFO Services for Growing Businesses</h2>
-    <p class="intro">
-      At Dixon Financial Group, we specialize in providing expert Fractional CFO services tailored to the unique needs of growing businesses. With over 20 years of experience leading finance and operations across technology, gaming, retail, and renewable energy sectors, we help companies strategically manage their financial planning, budgeting, and capital growth.
-    </p>
-    <p class="intro">
-      Our mission is to empower your business with clear financial insights, smart strategic planning, and hands-on leadership — all without the full-time CFO cost. Whether you need help optimizing operations, raising capital, or navigating complex compliance, Dixon Financial Group delivers trusted financial leadership that drives growth and profitability.
-    </p>
+    <div class="home-section">
+      <img src="Logo.png" alt="Dixon Financial Group Logo" />
 
-    <a href="contact.html" class="button">Get in Touch</a>
+      <div class="home-text">
+        <h1>Welcome to Dixon Financial Group</h1>
+        <p>
+          At Dixon Financial Group, we specialize in providing expert Fractional CFO services tailored to the unique needs of growing businesses. With over 20 years of experience leading finance and operations across technology, gaming, retail, and renewable energy sectors, we help companies strategically manage their financial planning, budgeting, and capital growth.
+        </p>
+        <p>
+          Our mission is to empower your business with clear financial insights, smart strategic planning, and hands-on leadership — all without the full-time CFO cost. Whether you need help optimizing operations, raising capital, or navigating complex compliance, Dixon Financial Group delivers trusted financial leadership that drives growth and profitability.
+        </p>
+      </div>
+    </div>
   </main>
 
   <footer>
